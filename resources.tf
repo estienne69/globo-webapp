@@ -57,7 +57,6 @@ resource "aws_instance" "main" {
 
   user_data_replace_on_change = true
   iam_instance_profile        = aws_iam_instance_profile.main.name
-
 }
 
 resource "aws_lb" "main" {
